@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static%}
+
+{% block title%}
+College Not found.
+{% endblock %}
+
+
+{% block css_files%}
+<link rel="stylesheet" href="{% static 'colleges/collegenotfound.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+<div class="content">
+<h1>Oops!The college you entered is not in our Database. We will shortly reach out to you!!!.</h1>
+<a href="{% url "linkingpage" "Scholarship" %}">Go to the list of all colleges</a>
+</div>
+{% endblock %}
